@@ -30,7 +30,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         // Update the Game's User Interface
         document.querySelector('#score-' + activeParticipant).textContent = scores[activeParticipant];
         // Check if the participant won the game
-        if (scores[activeParticipant] >= 20) {
+        if (scores[activeParticipant] >= 100) {
             document.querySelector('#name-' + activeParticipant).textContent = 'Winner!!!';
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.participant-' + activeParticipant + '-panel').classList.add('winner');
